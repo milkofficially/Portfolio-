@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Group 3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BMI calculator | Portfolio</title>
+</head>
+<body>
+    <div id="flex-container">
+
+        <div id="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="289" height="122" viewBox="0 0 289 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3L71 51.5L9.5 107" stroke="white" stroke-width="7"/>
+                    <path d="M34 3L25 113" stroke="white" stroke-width="7"/>
+                    <path d="M121 119.5L153.5 57.5L171.5 119.5" stroke="white" stroke-width="7"/>
+                    <path d="M184.5 119L197.5 53.5L215.5 119L226.5 53.5" stroke="white" stroke-width="7"/>
+                    <path d="M94.5 36L133.5 39" stroke="#47D116" stroke-width="7"/>
+                    <path d="M87 50.5L133.5 53L76 95.5L278.5 61.5" stroke="#47D116" stroke-width="7"/>
+                    <path d="M230 38.5L282 61L242 91.5" stroke="#47D116" stroke-width="7"/>
+                </svg></a>
+            </div>
+            <div class="izbori">
+                <a href=""><span>Hobbys</span></a>
+                <a href=""><span>Education</span></a>
+                <a href="aboutme.html"><span>About</span></a>
+                <a href=""><span>Hometown</span></a>
+                <a href="projects.html"><span>Projects</span></a>
+                <a href="contact.html"><span>Contact</span></a>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="bmi-container">
+                <div class="bmi-box">
+                    <div class="box-naslov">
+                        
+                        <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+
+                        <div class="display">
+                            <p id="result">20.0</p>
+                            <p id="category">Normal weight</p>
+                        </div>
+                         
+                    </div>
+                    <div class="row-one">
+                        <div class="godine">
+                            <label for="text">Age:</label>
+                            <input type="text" name="age" id="age">
+                        </div>
+                        <div class="gender">
+                            <label for="text">
+                                <span>Gender:</span>
+                                <span>Male</span>
+                                <input type="radio" name="gender" id="male" checked>
+                                <span>Female</span>
+                                <input type="radio" name="gender" id="female">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-two">
+                        <label for="text">
+                            <span>Height:
+                            <input type="text" name="height" id="height" placeholder="cm">
+                            </span>
+                            <span>Weight:
+                            <input type="text" name="weight" id="weight" placeholder="kg">
+                            </span>
+                        </label>
+                    </div>
+                    <label for="score" class="bmi-buttons">
+                        <input type="button" value="Calculate" onclick="calculate()">
+                        <input type="button" value="Reset" onclick="clearForm()">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+                <div>
+                    COPYRIGHT © 2023. DŽAN MULIĆ
+                    <p>CONTENT PROVIDED HERE IS COPYRIGHT-FREE.</p>
+                </div>
+                <div class="kontakt">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                
+                    
+                
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
